@@ -280,7 +280,7 @@ keyword.")
     (cond 
      ((string-match "XEmacs\\|Lucid" emacs-version)
       ;; XEmacs
-      (regexp-opt strings paren shy))
+      (regexp-opt strings paren))
      (t
       ;; GNU Emacs
       (regexp-opt strings)))))

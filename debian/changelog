@@ -1,3 +1,11 @@
+inform-mode (1.5.6-2) unstable; urgency=low
+
+  * Applied patch from Robert Bihlmeyer to fix compilation problem
+    with XEmacs.  Closes: #228530.
+  * Fixed relative conffile path.  Closes: #215926.
+
+ -- John Goerzen <jgoerzen@complete.org>  Tue,  2 Mar 2004 21:08:50 -0600
+
 inform-mode (1.5.6-1) unstable; urgency=low
 
   * New upstream release.
@@ -11,7 +19,3 @@ inform-mode (1.5.4-1) unstable; urgency=low
   * Initial Release.
 
  -- John Goerzen <jgoerzen@complete.org>  Sat, 26 Aug 2000 15:42:33 -0500
-
-Local variables:
-mode: debian-changelog
-End:
