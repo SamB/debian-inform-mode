@@ -1,0 +1,17 @@
+inform-mode (1.5.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added build dep on debhelper.  Closes: #92308.
+  * Made emacs startup script a conffile.  Closes: #132129.
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri,  8 Feb 2002 10:34:34 -0500
+
+inform-mode (1.5.4-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- John Goerzen <jgoerzen@complete.org>  Sat, 26 Aug 2000 15:42:33 -0500
+
+Local variables:
+mode: debian-changelog
+End:

@@ -1,0 +1,16 @@
+Source: inform-mode
+Section: editors
+Priority: extra
+Maintainer: John Goerzen <jgoerzen@complete.org>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.1.1
+
+Package: inform-mode
+Architecture: all
+Depends: emacsen-common
+Suggests: inform
+Description: Emacs mode for editing Inform files
+ This is an (X)Emacs mode for editing Inform source code.  Inform source
+ is used when writing games for the Z-Code virtual machine (aka Infocom).
+ This package will add an editing mode to your favorite Emacsen for
+ editing these files.

@@ -1,0 +1,15 @@
+This package was debianized by John Goerzen <jgoerzen@complete.org> on
+Sat, 26 Aug 2000 15:42:33 -0500.
+
+It was downloaded from
+gopher://gopher.quux.org:70/00/Archives/mirrors/if-archive/programming/editors/inform-mode.el
+
+The author's home page is http://www.merguez.demon.co.uk/inform-mode/#links
+
+Upstream Author(s): Rupert Lane <rupert@merguez.demon.co.uk>
+Previous Authors: Gareth Rees, Michael Fessler
+
+Copyright:
+
+GPLv2 or later.  Debian GNU/Linux users can find the GNU General Public
+License in /usr/share/common-licenses/GPL.
