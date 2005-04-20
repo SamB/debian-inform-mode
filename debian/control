@@ -1,7 +1,7 @@
 Source: inform-mode
 Section: editors
 Priority: extra
-Maintainer: John Goerzen <jgoerzen@complete.org>
+Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends-Indep: debhelper
 Standards-Version: 3.1.1
 

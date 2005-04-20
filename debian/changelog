@@ -1,3 +1,9 @@
+inform-mode (1.5.6-3) unstable; urgency=low
+
+  * Orphaning this package.
+
+ -- John Goerzen <jgoerzen@complete.org>  Tue, 19 Apr 2005 23:24:35 -0500
+
 inform-mode (1.5.6-2) unstable; urgency=low
 
   * Applied patch from Robert Bihlmeyer to fix compilation problem
