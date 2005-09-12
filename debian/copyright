@@ -1,12 +1,9 @@
 This package was debianized by John Goerzen <jgoerzen@complete.org> on
 Sat, 26 Aug 2000 15:42:33 -0500.
 
-It was downloaded from
-gopher://gopher.quux.org:70/00/Archives/mirrors/if-archive/programming/editors/inform-mode.el
+It was downloaded from <http://www.rupert-lane.org/inform-mode/>.
 
-The author's home page is http://www.merguez.demon.co.uk/inform-mode/#links
-
-Upstream Author(s): Rupert Lane <rupert@merguez.demon.co.uk>
+Upstream Author: Rupert Lane <rupert@merguez.demon.co.uk>
 Previous Authors: Gareth Rees, Michael Fessler
 
 Copyright:

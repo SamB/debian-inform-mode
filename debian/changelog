@@ -1,3 +1,16 @@
+inform-mode (1.5.8-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release.
+  * Switch to debhelper 4.
+  * Remove dh_make examples.
+  * debian/copyright: Update upstream URL.
+  * debian/emacsen-install, debian/emacsen-remove: Remove unnecessary
+    call to install-info.
+  * Conforms to Standards version 3.6.2.
+
+ -- Matej Vela <vela@debian.org>  Mon, 12 Sep 2005 15:29:58 +0200
+
 inform-mode (1.5.6-3) unstable; urgency=low
 
   * Orphaning this package.
