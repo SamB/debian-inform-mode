@@ -1,3 +1,15 @@
+inform-mode (1.5.8-2) unstable; urgency=low
+
+  * Adopt package. Closes: #305463.
+  * Bump debhelper to v5.
+  * Move debhelper to Build-Depends (from ~-Indep).
+  * Bump standards to 3.7.2 (no changes).
+  * Insert full GPLv2 paragraph into debian/copyright.
+  * Drop Suggests: inform because that package won't enter testing
+    in the near future.
+
+ -- Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>  Thu, 02 Aug 2007 13:31:55 +0200
+
 inform-mode (1.5.8-1) unstable; urgency=low
 
   * QA upload.

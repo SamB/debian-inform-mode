@@ -1,19 +1,10 @@
 #!/usr/bin/make -f
-# Sample debian/rules that uses debhelper. 
-# This file is public domain software, originally written by Joey Hess.
-#
-# This version is for packages that are architecture independent.
-
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-
-build:
-
 clean:
 	dh_testdir
 	dh_testroot
 	dh_clean
 
+build:
 install: build
 	dh_testdir
 	dh_testroot
@@ -21,8 +12,9 @@ install: build
 	dh_installdirs
 	dh_install inform-mode.el usr/share/emacs/site-lisp/inform-mode
 
-# Build architecture-independent files here.
-binary-indep: build install
+binary: binary-indep binary-arch
+binary-arch: install
+binary-indep: install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
@@ -35,8 +27,4 @@ binary-indep: build install
 	dh_md5sums
 	dh_builddeb
 
-# Build architecture-dependent files here.
-binary-arch: build install
-
-binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install
