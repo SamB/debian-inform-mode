@@ -1,3 +1,9 @@
+inform-mode (1.5.8-3) unstable; urgency=low
+
+  * Clarify copyright.
+
+ -- Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>  Wed, 21 Nov 2007 11:19:24 +0100
+
 inform-mode (1.5.8-2) unstable; urgency=low
 
   * Adopt package. Closes: #305463.
