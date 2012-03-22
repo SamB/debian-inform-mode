@@ -1,6 +1,7 @@
 inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
 
-  * Just a suggestion to the maintainer, not an NMU.
+  [Just a suggestion to the maintainer, not an NMU.]
+  
   * Update to source format "3.0 (quilt)".
   * Stop using obsolete ">" relation in debhelper build-dep.
   * In debian/copyright, refer to /usr/share/common-licenses/GPL-2
@@ -12,6 +13,9 @@ inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
   * Also depend on ${misc:Depends}, to reassure lintian.
   * Add Homepage: field.
   * Use dh_prep instead of deprecated dh_clean -k.
+  
+  * Don't break [x]emacs whenever we're removed but not purged (Closes: #550688).
+    Thanks to Ralf Doering for the patch, and A Mennucc for the initial report.
 
  -- Samuel Bronson <naesten@gmail.com>  Wed, 21 Mar 2012 22:16:49 -0400
 

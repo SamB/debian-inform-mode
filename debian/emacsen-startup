@@ -5,21 +5,27 @@
 ;; Originally contributed by Nils Naumann <naumann@unileoben.ac.at>
 ;; Modified by Dirk Eddelbuettel <edd@debian.org>
 ;; Adapted for dh-make by Jim Van Zandt <jrv@vanzandt.mv.com>
+;; 
+;; Ralf Doering <rdoering@netsys-it.de>:
+;; Handle removed but not purged package, idea taken from easypg package.
 
 ;; The inform-mode package follows the Debian/GNU Linux 'emacsen' policy and
 ;; byte-compiles its elisp files for each 'emacs flavor' (emacs19,
 ;; xemacs19, emacs20, xemacs20...).  The compiled code is then
 ;; installed in a subdirectory of the respective site-lisp directory.
 ;; We have to add this to the load-path:
-(setq load-path (nconc load-path (list (concat "/usr/share/"
-                                               (symbol-name flavor)
-                                               "/site-lisp/inform-mode"))))
 
-(autoload 'inform-mode "inform-mode" "Inform editing mode." t)
-(autoload 'inform-maybe-mode "inform-mode" "Inform/C header editing mode.")
-(setq auto-mode-alist
-      (append '(("\\.h\\'"   . inform-maybe-mode)
-                ("\\.inf\\'" . inform-mode))
-               auto-mode-alist))
+(if (not (file-exists-p "/usr/share/emacs/site-lisp/inform-mode"))
+    (message "Package inform-mode removed but not purged.  Skipping setup.")
+  (setq load-path (nconc load-path (list (concat "/usr/share/"
+						 (symbol-name flavor)
+						 "/site-lisp/inform-mode"))))
 
-(add-hook 'inform-mode-hook 'turn-on-font-lock)
+  (autoload 'inform-mode "inform-mode" "Inform editing mode." t)
+  (autoload 'inform-maybe-mode "inform-mode" "Inform/C header editing mode.")
+  (setq auto-mode-alist
+	(append '(("\\.h\\'"   . inform-maybe-mode)
+		  ("\\.inf\\'" . inform-mode))
+		auto-mode-alist))
+
+  (add-hook 'inform-mode-hook 'turn-on-font-lock))
