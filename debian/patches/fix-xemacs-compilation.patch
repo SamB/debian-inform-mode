@@ -1,0 +1,18 @@
+Description: Fix compilation problem with XEmacs
+Author: Robert Bihlmeyer <robbe@orcus.priv.at>
+Origin: http://bugs.debian.org/228530#22
+Debian-Bug: http://bugs.debian.org/228530
+Reviewed-By: John Goerzen <jgoerzen@complete.org>
+Last-Update: 2004-04-02
+
+--- inform-mode-1.5.8.orig/inform-mode.el
++++ inform-mode-1.5.8/inform-mode.el
+@@ -316,7 +316,7 @@ keyword.")
+     (cond 
+      ((string-match "XEmacs\\|Lucid" emacs-version)
+       ;; XEmacs
+-      (regexp-opt strings paren shy))
++      (regexp-opt strings paren))
+      (t
+       ;; GNU Emacs
+       (regexp-opt strings)))))

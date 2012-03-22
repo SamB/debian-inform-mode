@@ -1,3 +1,20 @@
+inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
+
+  * Just a suggestion to the maintainer, not an NMU.
+  * Update to source format "3.0 (quilt)".
+  * Stop using obsolete ">" relation in debhelper build-dep.
+  * In debian/copyright, refer to /usr/share/common-licenses/GPL-2
+    specifically instead of the ambiguous /usr/share/common-licenses/GPL.
+  * Put back the Suggests: inform, since we reached the distant future way
+    back in oldstable (lenny).
+  * Depend on emacs23 | emacsen, not emacsen-common, in compliance with
+    section 6D of debian-emacs-policy.
+  * Also depend on ${misc:Depends}, to reassure lintian.
+  * Add Homepage: field.
+  * Use dh_prep instead of deprecated dh_clean -k.
+
+ -- Samuel Bronson <naesten@gmail.com>  Wed, 21 Mar 2012 22:16:49 -0400
+
 inform-mode (1.5.8-3) unstable; urgency=low
 
   * Clarify copyright.
