@@ -16,6 +16,8 @@ inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
   
   * Don't break [x]emacs whenever we're removed but not purged (Closes: #550688).
     Thanks to Ralf Doering for the patch, and A Mennucc for the initial report.
+  * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E.
+    This allows find-library, find-function, etc. to work on our elisp files.
 
  -- Samuel Bronson <naesten@gmail.com>  Wed, 21 Mar 2012 22:16:49 -0400
 
