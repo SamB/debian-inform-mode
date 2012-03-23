@@ -1,19 +1,19 @@
 inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
 
   [Just a suggestion to the maintainer, not an NMU.]
-  
+
   * Update to source format "3.0 (quilt)".
-  * Stop using obsolete ">" relation in debhelper build-dep.
-  * In debian/copyright, refer to /usr/share/common-licenses/GPL-2
-    specifically instead of the ambiguous /usr/share/common-licenses/GPL.
+  * Update Standards-Version to 3.9.3 (& various nits).
+    + Stop using obsolete ">" relation in debhelper build-dep.
+    + In debian/copyright, refer to /usr/share/common-licenses/GPL-2
+      specifically instead of the ambiguous /usr/share/common-licenses/GPL.
+    + Depend on emacs23 | emacsen, not emacsen-common, in compliance with
+      section 6D of debian-emacs-policy.
+    + Also depend on ${misc:Depends}, to reassure lintian.
+    + Use dh_prep instead of deprecated dh_clean -k.
+    + Add Homepage: field.
   * Put back the Suggests: inform, since we reached the distant future way
     back in oldstable (lenny).
-  * Depend on emacs23 | emacsen, not emacsen-common, in compliance with
-    section 6D of debian-emacs-policy.
-  * Also depend on ${misc:Depends}, to reassure lintian.
-  * Add Homepage: field.
-  * Use dh_prep instead of deprecated dh_clean -k.
-  
   * Don't break [x]emacs whenever we're removed but not purged (Closes: #550688).
     Thanks to Ralf Doering for the patch, and A Mennucc for the initial report.
   * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E.

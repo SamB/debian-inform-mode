@@ -3,7 +3,7 @@ Section: editors
 Priority: extra
 Maintainer: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
 Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
+Standards-Version: 3.9.3
 Homepage: http://www.rupert-lane.org/inform-mode/
 
 Package: inform-mode
