@@ -5,6 +5,8 @@ Maintainer: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
 Build-Depends: debhelper (>= 5)
 Standards-Version: 3.9.3
 Homepage: http://www.rupert-lane.org/inform-mode/
+Vcs-Git: https://github.com/SamB/debian-inform-mode
+Vcs-Browser: https://github.com/SamB/debian-inform-mode
 
 Package: inform-mode
 Architecture: all
