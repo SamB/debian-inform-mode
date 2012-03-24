@@ -16,7 +16,7 @@ inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
     back in oldstable (lenny).
   * Don't break [x]emacs whenever we're removed but not purged (Closes: #550688).
     Thanks to Ralf Doering for the patch, and A Mennucc for the initial report.
-  * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E.
+  * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E (Closes: #665397).
     This allows find-library, find-function, etc. to work on our elisp files.
   * Add example Vcs-Git: and Vcs-Browser: fields.
 
