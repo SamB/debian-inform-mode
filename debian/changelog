@@ -1,7 +1,6 @@
-inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
+inform-mode (1.5.8-4~naesten1) UNRELEASED; urgency=low
 
-  [Just a suggestion to the maintainer, not an NMU.]
-
+  * Adopt package (Closes: #691726).
   * Update to source format "3.0 (quilt)".
   * Update Standards-Version to 3.9.3 (& various nits).
     + Stop using obsolete ">" relation in debhelper build-dep.
@@ -13,15 +12,16 @@ inform-mode (1.5.8-3.1~naesten1) unstable; urgency=low
     + Use dh_prep instead of deprecated dh_clean -k.
     + Add Homepage: field.
   * Put back the Suggests: inform, since we reached the distant future way
-    back in oldstable (lenny).
-  * Don't break [x]emacs whenever we're removed but not purged (Closes: #550688).
+    back in lenny.
+  * Don't break emacs whenever we're removed but not purged (Closes: #550688).
     Thanks to Ralf Doering for the patch, and A Mennucc for the initial report.
-  * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E (Closes: #665397).
+  * Update emacsen-install and emacsen-remove for debian-emacs-policy 6E
+    (Closes: #665397).
     This allows find-library, find-function, etc. to work on our elisp files.
-  * Add example Vcs-Git: and Vcs-Browser: fields.
+  * Add Vcs-Git: and Vcs-Browser: fields.
   * Add debian/watch file. (Thanks, unknown sepwatch comtributor.)
 
- -- Samuel Bronson <naesten@gmail.com>  Wed, 21 Mar 2012 22:16:49 -0400
+ -- Samuel Bronson <naesten@gmail.com>  Fri, 27 Dec 2013 18:06:04 -0500
 
 inform-mode (1.5.8-3) unstable; urgency=low
 
