@@ -1,0 +1,3 @@
+version=3
+http://www.rupert-lane.org/inform-mode/download.html \
+(?:.*/|)inform-mode[_\-\.]v?(\d.*?)(?:[\.\-_](?:src|all))?.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz)|zip).*
