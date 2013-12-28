@@ -1,6 +1,8 @@
 inform-mode (1.6.2-1~naesten1) UNRELEASED; urgency=low
 
   * New upstream version
+    + Adds defcustom forms (Closes: #665424).
+    + Supercedes xemacs compatibility patch.
   * Adopt package (Closes: #691726).
   * Update to source format "3.0 (quilt)".
   * Update Standards-Version to 3.9.3 (& various nits).
@@ -21,8 +23,6 @@ inform-mode (1.6.2-1~naesten1) UNRELEASED; urgency=low
     This allows find-library, find-function, etc. to work on our elisp files.
   * Add Vcs-Git: and Vcs-Browser: fields.
   * Add debian/watch file. (Thanks, unknown sepwatch comtributor.)
-  * New patch use-defcustom.patch: Craft appropriate `defcustom' forms for
-    the user options (Closes: #665424).
 
  -- Samuel Bronson <naesten@gmail.com>  Fri, 27 Dec 2013 18:33:29 -0500
 
