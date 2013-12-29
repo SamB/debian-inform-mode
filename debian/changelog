@@ -7,7 +7,7 @@ inform-mode (1.6.2-1~naesten1) UNRELEASED; urgency=low
   
   * Adopt package (Closes: #691726).
   * Update to source format "3.0 (quilt)".
-  * Update Standards-Version to 3.9.3 (& various nits).
+  * Update Standards-Version to 3.9.5 (& various nits).
     + Stop using obsolete ">" relation in debhelper build-dep.
     + In debian/copyright, refer to /usr/share/common-licenses/GPL-2
       specifically instead of the ambiguous /usr/share/common-licenses/GPL.
@@ -16,6 +16,7 @@ inform-mode (1.6.2-1~naesten1) UNRELEASED; urgency=low
     + Also depend on ${misc:Depends}, to reassure lintian.
     + Use dh_prep instead of deprecated dh_clean -k.
     + Add Homepage: field.
+    + Add build-arch/build-indep rules
   * Put back the Suggests: inform, since we reached the distant future way
     back in lenny.
   * Don't break emacs whenever we're removed but not purged (Closes: #550688).

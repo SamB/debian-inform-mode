@@ -5,12 +5,16 @@ clean:
 	dh_clean
 
 build:
-install: build
+build-arch:
+build-indep:
+install: install-stamp
+install-stamp: build
 	dh_testdir
 	dh_testroot
 	dh_prep
 	dh_installdirs
 	dh_install inform-mode.el usr/share/emacs/site-lisp/inform-mode
+	touch $@
 
 binary: binary-indep binary-arch
 binary-arch: install

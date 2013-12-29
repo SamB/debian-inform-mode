@@ -3,7 +3,7 @@ Section: editors
 Priority: extra
 Maintainer: Samuel Bronson <naesten@gmail.com>
 Build-Depends: debhelper (>= 5)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.rupert-lane.org/inform-mode/
 Vcs-Git: https://github.com/SamB/debian-inform-mode
 Vcs-Browser: https://github.com/SamB/debian-inform-mode
