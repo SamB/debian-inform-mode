@@ -710,9 +710,10 @@ That is, one found at the start of a line.")
   "Start Inform mode if file is in Inform; `inform-maybe-other' otherwise."
   (let ((case-fold-search t))
     (if (save-excursion
-          (re-search-forward
-           "^\\(!\\|object\\|nearby\\|\\[ \\)"
-           nil t))
+          (with-syntax-table c-mode-syntax-table
+            (re-search-forward
+             "^\\(!\\|object\_>\\|nearby\_>\\|\\[ \\)"
+             nil t)))
         (inform-mode)
       (funcall inform-maybe-other))))
 

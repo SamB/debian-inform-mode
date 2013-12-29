@@ -1,0 +1,29 @@
+From 466c9af96109bd5be05c4930a10bcfceb85c5a14 Mon Sep 17 00:00:00 2001
+From: Samuel Bronson <naesten@gmail.com>
+Date: Sun, 29 Dec 2013 02:41:32 -0500
+Subject: inform-maybe-mode: tighten keyword matching
+
+Don't treat words only *starting* with an Inform keyword as being that
+keyword.
+---
+ inform-mode.el | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/inform-mode.el b/inform-mode.el
+index 1c5abd1..c0d0336 100644
+--- a/inform-mode.el
++++ b/inform-mode.el
+@@ -710,9 +710,10 @@ That is, one found at the start of a line.")
+   "Start Inform mode if file is in Inform; `inform-maybe-other' otherwise."
+   (let ((case-fold-search t))
+     (if (save-excursion
+-          (re-search-forward
+-           "^\\(!\\|object\\|nearby\\|\\[ \\)"
+-           nil t))
++          (with-syntax-table c-mode-syntax-table
++            (re-search-forward
++             "^\\(!\\|object\_>\\|nearby\_>\\|\\[ \\)"
++             nil t)))
+         (inform-mode)
+       (funcall inform-maybe-other))))
+ 
