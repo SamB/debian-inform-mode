@@ -3,6 +3,8 @@ inform-mode (1.6.2-1~naesten1) UNRELEASED; urgency=low
   * New upstream version
     + Adds defcustom forms (Closes: #665424).
     + Supercedes xemacs compatibility patch.
+  * debian/copyright: license changed to GPLv3+
+  
   * Adopt package (Closes: #691726).
   * Update to source format "3.0 (quilt)".
   * Update Standards-Version to 3.9.3 (& various nits).
